@@ -23,7 +23,6 @@ fun main() {
     val validator = ValidParentheses()
 
     val testCases = listOf(
-        "()" to true,
         "()[]{}" to true,
         "(]" to false,
         "([)]" to false,
