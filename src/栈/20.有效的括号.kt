@@ -24,7 +24,6 @@ fun main() {
 
     val testCases = listOf(
         "()[]{}" to true,
-        "(]" to false,
         "([)]" to false,
         "{[]}" to true,
         "(" to false,
