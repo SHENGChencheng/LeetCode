@@ -26,3 +26,9 @@ fun createList(vararg values: Int): ListNode? {
     }
     return head
 }
+
+// 二叉树
+class TreeNode(var `val`: Int) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
+}
