@@ -1,4 +1,4 @@
-package 二分查找
+package 二分查找.搜索插入位置
 
 class SearchInsert {
     fun searchInsert(nums: IntArray, target: Int): Int {

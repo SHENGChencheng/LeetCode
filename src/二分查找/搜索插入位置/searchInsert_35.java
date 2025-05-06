@@ -1,4 +1,4 @@
-package 二分查找.java;
+package 二分查找.搜索插入位置;
 
 public class searchInsert_35 {
     public static int searchInsert(int[] nums, int target) {

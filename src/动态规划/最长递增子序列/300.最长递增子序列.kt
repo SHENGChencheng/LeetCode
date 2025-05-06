@@ -1,4 +1,4 @@
-package 动态规划
+package 动态规划.最长递增子序列
 
 class LengthOfLIS {
     fun lengthOfLIS(nums: IntArray): Int {

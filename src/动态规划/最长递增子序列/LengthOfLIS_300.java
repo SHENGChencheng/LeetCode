@@ -1,4 +1,4 @@
-package 动态规划.java;
+package 动态规划.最长递增子序列;
 
 import java.util.Arrays;
 
