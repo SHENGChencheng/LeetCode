@@ -1,6 +1,6 @@
 package 二分查找.搜索插入位置;
 
-public class searchInsert_35 {
+public class SearchInsert_35 {
     public static int searchInsert(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
         while (left <= right) {

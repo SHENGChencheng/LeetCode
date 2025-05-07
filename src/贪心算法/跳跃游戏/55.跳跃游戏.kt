@@ -1,4 +1,4 @@
-package 贪心算法
+package 贪心算法.跳跃游戏
 
 class CanJump {
     fun canJump(nums: IntArray): Boolean {
