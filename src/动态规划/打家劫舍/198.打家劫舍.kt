@@ -1,4 +1,4 @@
-package 动态规划
+package 动态规划.打家劫舍
 
 class Rob() {
     fun rob(nums: IntArray): Int {
