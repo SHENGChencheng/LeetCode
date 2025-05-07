@@ -1,4 +1,4 @@
-package 多维动态规划
+package 多维动态规划.最长公共子序列
 
 class LongestCommonSubsequence {
     fun longestCommonSubsequence(text1: String, text2: String): Int {
@@ -23,4 +23,5 @@ fun main() {
     println(longestCommonSubsequence.longestCommonSubsequence("abcde", "ace"))   // 应输出 3
     println(longestCommonSubsequence.longestCommonSubsequence("abc", "def"))     // 应输出 0
     println(longestCommonSubsequence.longestCommonSubsequence("aab", "aba"))     // 应输出 2
+    println(longestCommonSubsequence.longestCommonSubsequence("hish", "fish"))     // 应输出 3
 }
