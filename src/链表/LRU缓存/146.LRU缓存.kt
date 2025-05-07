@@ -1,4 +1,4 @@
-package 链表
+package 链表.LRU缓存
 
 class LRUCache(capacity: Int) {
     inner class Node(val key: Int, var value: Int) {
