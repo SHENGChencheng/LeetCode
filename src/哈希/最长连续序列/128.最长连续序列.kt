@@ -1,4 +1,4 @@
-package 哈希
+package 哈希.最长连续序列
 
 class LongestConsecutive {
     fun longestConsecutive(nums: IntArray): Int {
