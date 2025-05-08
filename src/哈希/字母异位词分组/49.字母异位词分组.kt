@@ -1,4 +1,4 @@
-package 哈希
+package 哈希.字母异位词分组
 
 class GroupAnagrams {
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
