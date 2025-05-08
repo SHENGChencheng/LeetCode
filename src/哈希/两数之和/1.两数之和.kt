@@ -1,4 +1,4 @@
-package 哈希
+package 哈希.两数之和
 
 class TwoSum {
     fun twoSum(nums: IntArray, target: Int): IntArray {
