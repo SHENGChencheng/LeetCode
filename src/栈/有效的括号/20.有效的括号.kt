@@ -1,4 +1,4 @@
-package 栈
+package 栈.有效的括号
 
 class ValidParentheses {
     fun isValid(s: String): Boolean {

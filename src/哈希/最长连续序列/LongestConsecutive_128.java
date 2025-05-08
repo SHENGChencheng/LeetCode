@@ -1,7 +1,5 @@
 package 哈希.最长连续序列;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 
 public class LongestConsecutive_128 {
