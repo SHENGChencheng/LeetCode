@@ -1,4 +1,4 @@
-package 双指针
+package 双指针.三数之和
 
 class ThreeSum {
     fun threeSum(nums: IntArray): List<List<Int>> {
