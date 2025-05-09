@@ -1,4 +1,4 @@
-package 双指针
+package 双指针.移动零
 
 class MoveZeroes {
     fun moveZeroes(nums: IntArray): Unit {
