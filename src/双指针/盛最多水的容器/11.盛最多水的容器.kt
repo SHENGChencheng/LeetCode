@@ -1,4 +1,4 @@
-package 双指针
+package 双指针.盛最多水的容器
 
 class MaxArea {
     fun maxArea(height: IntArray): Int {
