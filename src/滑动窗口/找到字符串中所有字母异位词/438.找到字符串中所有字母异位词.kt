@@ -1,4 +1,4 @@
-package 滑动窗口
+package 滑动窗口.找到字符串中所有字母异位词
 
 class FindAnagrams {
     fun findAnagrams(s: String, p: String): List<Int> {
