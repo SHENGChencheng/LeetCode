@@ -1,4 +1,4 @@
-package 普通数组
+package 普通数组.最大子数组和
 
 class MaxSubArray {
     fun maxSubArray(nums: IntArray): Int {
