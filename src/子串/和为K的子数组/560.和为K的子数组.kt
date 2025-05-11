@@ -1,4 +1,4 @@
-package 子串
+package 子串.和为K的子数组
 
 class SubarraySum {
     fun subarraySum(nums: IntArray, k: Int): Int {
