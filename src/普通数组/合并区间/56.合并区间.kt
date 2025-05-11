@@ -1,4 +1,4 @@
-package 普通数组
+package 普通数组.合并区间
 
 class Merge {
     fun merge(intervals: Array<IntArray>): Array<IntArray> {
