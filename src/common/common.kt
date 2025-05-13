@@ -2,6 +2,7 @@ package common
 
 // 链表
 class ListNode(var `val`: Int) {
+    @JvmField
     var next: ListNode? = null
 }
 
@@ -28,7 +29,9 @@ fun createList(vararg values: Int): ListNode? {
 }
 
 // 二叉树
-class TreeNode(var `val`: Int) {
+class TreeNode(@JvmField var `val`: Int) {
+    @JvmField
     var left: TreeNode? = null
+    @JvmField
     var right: TreeNode? = null
 }

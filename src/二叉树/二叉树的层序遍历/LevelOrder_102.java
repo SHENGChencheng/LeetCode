@@ -18,12 +18,12 @@ public class LevelOrder_102 {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
-                level.add(node.getVal());
-                if (node.getLeft() != null) {
-                    queue.add(node.getLeft());
+                level.add(node.val);
+                if (node.left != null) {
+                    queue.add(node.left);
                 }
-                if (node.getRight() != null) {
-                    queue.add(node.getRight());
+                if (node.right != null) {
+                    queue.add(node.right);
                 }
             }
             ans.add(level);
