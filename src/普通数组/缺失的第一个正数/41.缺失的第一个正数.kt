@@ -1,6 +1,6 @@
 package 普通数组.缺失的第一个正数
 
-import SortArrayJava.swap
+import 未分类.SortArrayJava.swap
 
 class MissingPositive {
     fun firstMissingPositive(nums: IntArray): Int {

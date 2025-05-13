@@ -1,3 +1,5 @@
+package 未分类
+
 class AddStrings {
     fun addStrings(num1: String, num2: String): String {
         var i = num1.lastIndex

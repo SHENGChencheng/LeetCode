@@ -1,3 +1,5 @@
+package 未分类;
+
 import java.util.Scanner;
 
 public class SortArrayJava {

@@ -1,3 +1,5 @@
+package 未分类
+
 class Knapsack {
     fun knapsack(): Int {
         val weights = intArrayOf(3, 1, 2, 2, 1)
