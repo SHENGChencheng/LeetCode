@@ -1,7 +1,7 @@
 package common
 
 // 链表
-class ListNode(var `val`: Int) {
+class ListNode(@JvmField var `val`: Int) {
     @JvmField
     var next: ListNode? = null
 }
