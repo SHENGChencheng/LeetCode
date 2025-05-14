@@ -35,3 +35,10 @@ class TreeNode(@JvmField var `val`: Int) {
     @JvmField
     var right: TreeNode? = null
 }
+
+class Node(@JvmField var `val`: Int) {
+    @JvmField
+    var next: Node? = null
+    @JvmField
+    var random: Node? = null
+}
