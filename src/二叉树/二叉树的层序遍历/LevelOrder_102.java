@@ -20,10 +20,10 @@ public class LevelOrder_102 {
                 TreeNode node = queue.poll();
                 level.add(node.val);
                 if (node.left != null) {
-                    queue.add(node.left);
+                    queue.offer(node.left);
                 }
                 if (node.right != null) {
-                    queue.add(node.right);
+                    queue.offer(node.right);
                 }
             }
             ans.add(level);
