@@ -7,7 +7,7 @@ class generateParenthesis {
         return ans
     }
 
-    fun backtrack(ans: MutableList<String>, cur: String, open: Int, close: Int, max: Int) {
+    private fun backtrack(ans: MutableList<String>, cur: String, open: Int, close: Int, max: Int) {
         if (cur.length == max * 2) {
             ans.add(cur)
             return

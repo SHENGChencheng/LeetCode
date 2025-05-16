@@ -5,11 +5,11 @@ class Permute {
         val ans = mutableListOf<List<Int>>()
         val path = mutableListOf<Int>()
         val used = BooleanArray(nums.size)
-        backtrace(nums, ans, path, used)
+        backtrack(nums, ans, path, used)
         return ans
     }
 
-    private fun backtrace(nums: IntArray, ans: MutableList<List<Int>>, path: MutableList<Int>, used: BooleanArray) {
+    private fun backtrack(nums: IntArray, ans: MutableList<List<Int>>, path: MutableList<Int>, used: BooleanArray) {
         if (path.size == nums.size) {
             val pathCopy = ArrayList(path)
             ans.add(pathCopy)
@@ -19,7 +19,7 @@ class Permute {
             if (used[i]) continue
             path.add(nums[i])
             used[i] = true
-            backtrace(nums, ans, path, used)
+            backtrack(nums, ans, path, used)
             path.removeAt(path.size - 1)
             used[i] = false
         }

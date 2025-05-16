@@ -4,16 +4,16 @@ class Subsets {
     fun subsets(nums: IntArray): List<List<Int>> {
         val ans = mutableListOf<List<Int>>()
         val path = mutableListOf<Int>()
-        backtrace(nums, ans, path, 0)
+        backtrack(nums, ans, path, 0)
         return ans
     }
 
-    private fun backtrace(nums: IntArray, ans: MutableList<List<Int>>, path: MutableList<Int>, start: Int) {
+    private fun backtrack(nums: IntArray, ans: MutableList<List<Int>>, path: MutableList<Int>, start: Int) {
         val pathCopy = ArrayList(path)
         ans.add(pathCopy)
         for (i in start until nums.size) {
             path.add(nums[i])
-            backtrace(nums, ans, path, i + 1)
+            backtrack(nums, ans, path, i + 1)
             path.removeAt(path.size - 1)
         }
     }
