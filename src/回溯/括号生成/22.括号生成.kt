@@ -1,4 +1,4 @@
-package 回溯
+package 回溯.括号生成
 
 class generateParenthesis {
     fun generateParenthesis(n: Int): List<String> {
