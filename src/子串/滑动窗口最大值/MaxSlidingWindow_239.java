@@ -1,13 +1,13 @@
 package 子串.滑动窗口最大值;
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
-import java.util.LinkedList;
 
 public class MaxSlidingWindow_239 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
-        Deque<Integer> deque = new LinkedList<>();
+        Deque<Integer> deque = new ArrayDeque<>();
         for (int i = 0; i < k; ++i) {
             while (!deque.isEmpty() && nums[i] >= nums[deque.peekLast()]) {
                 deque.pollLast();
