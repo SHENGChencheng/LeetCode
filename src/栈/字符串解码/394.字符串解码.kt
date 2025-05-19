@@ -12,12 +12,14 @@ class DecodeString {
                     num = num * 10 + (ch - '0')
                 }
                 ch == '[' -> {
+                    // 保存当前的字符串和重复次数，准备进入新的一层
                     numStack.addLast(num)
                     num = 0
                     strStack.addLast(currentStr.toString())
                     currentStr = StringBuilder()
                 }
                 ch == ']' -> {
+                    // 取出栈顶元素，拼接重复后的字符串，并合之前的结果合并
                     val repeatTimes = numStack.removeLast()
                     val prevStr = strStack.removeLast()
                     val newStr = StringBuilder(prevStr)
