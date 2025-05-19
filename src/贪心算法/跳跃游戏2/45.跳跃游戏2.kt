@@ -1,4 +1,4 @@
-package 贪心算法
+package 贪心算法.跳跃游戏2
 
 class Jump {
     fun jump(nums: IntArray): Int {
