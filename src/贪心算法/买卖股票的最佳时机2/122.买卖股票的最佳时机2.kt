@@ -1,4 +1,4 @@
-package 贪心算法
+package 贪心算法.买卖股票的最佳时机2
 
 class MaxProfit2 {
     fun maxProfit2(prices: IntArray): Int {
