@@ -1,4 +1,4 @@
-package 多维动态规划
+package 多维动态规划.最小路径和
 
 class MainPathSum {
     fun minPathSum(grid: Array<IntArray>): Int {
