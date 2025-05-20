@@ -1,7 +1,7 @@
 package 动态规划.分割等和子集;
 
-public class canPartition {
-    public boolean canPartition(int[] nums) {
+public class CanPartition_416 {
+    public boolean canPartition_416(int[] nums) {
         int sum = 0;
         for (int num : nums) {
             sum += num;
