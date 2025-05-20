@@ -1,4 +1,4 @@
-package 动态规划
+package 动态规划.爬楼梯
 
 class ClimbStairs {
     fun climbStairs(n: Int): Int {
