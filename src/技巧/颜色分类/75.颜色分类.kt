@@ -12,7 +12,7 @@ class SortColors {
         while (i <= p2) {
             when (nums[i]) {
                 0 -> {
-                    nums[i] = nums[p0].also { nums[p0] == nums[i] }
+                    nums[i] = nums[p0].also { nums[p0] = nums[i] }
                     p0++
                     i++
                 }
