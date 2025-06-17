@@ -1,7 +1,6 @@
 package 堆.数据流的中位数
 
-import java.util.PriorityQueue
-import kotlin.math.max
+import java.util.*
 
 class MedianFinder {
     private val maxHeap = PriorityQueue<Int>(compareByDescending { it })
