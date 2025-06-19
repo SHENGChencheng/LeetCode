@@ -4,6 +4,7 @@ import java.util.ArrayDeque;
 
 public class LargestRectangleArea_84 {
     public int largestRectangleArea(int[] heights) {
+        // 单调递增栈
         ArrayDeque<Integer> stack = new ArrayDeque<>();
         int maxArea = 0;
         for (int i = 0; i <= heights.length; i++) {
