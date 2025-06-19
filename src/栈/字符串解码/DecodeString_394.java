@@ -19,11 +19,11 @@ public class DecodeString_394 {
             } else if (ch == ']') {
                 int repeatTimes = numStack.pop();
                 String prevStr = strStack.pop();
-                StringBuilder newStr = new StringBuilder(prevStr);
+                StringBuilder temp = new StringBuilder(prevStr);
                 for (int i = 0; i < repeatTimes; i++) {
-                    newStr.append(currentStr);
+                    temp.append(currentStr);
                 }
-                currentStr = newStr;
+                currentStr = temp;
             } else {
                 currentStr.append(ch);
             }
