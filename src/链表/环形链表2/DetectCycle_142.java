@@ -30,12 +30,12 @@ public class DetectCycle_142 {
             // 相遇后, 一个从头开始, 一个从相遇点开始, 速度相同, 相遇点就是入口
             if (slow == fast) {
                 // 找到入口
-                ListNode pos = head;
-                while (pos != slow) {
-                    pos = pos.next;
+                ListNode ans = head;
+                while (ans != slow) {
+                    ans = ans.next;
                     slow = slow.next;
                 }
-                return pos;
+                return ans;
             }
         }
         return null;
