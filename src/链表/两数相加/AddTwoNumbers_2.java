@@ -4,8 +4,8 @@ import common.ListNode;
 
 public class AddTwoNumbers_2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummyHead = new ListNode(0);
-        ListNode p = l1, q = l2, cur = dummyHead;
+        ListNode dummy = new ListNode(0);
+        ListNode p = l1, q = l2, cur = dummy;
         int carry = 0;
         while (p != null || q != null) {
             int x = (p != null) ? p.val : 0;
@@ -20,6 +20,6 @@ public class AddTwoNumbers_2 {
         if (carry > 0) {
             cur.next = new ListNode(carry);
         }
-        return dummyHead.next;
+        return dummy.next;
     }
 }
