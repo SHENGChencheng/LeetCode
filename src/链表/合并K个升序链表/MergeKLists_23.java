@@ -8,7 +8,8 @@ import java.util.PriorityQueue;
 public class MergeKLists_23 {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) return null;
-        PriorityQueue<ListNode> heap = new PriorityQueue<>(lists.length, Comparator.comparingInt(o -> o.val));
+        PriorityQueue<ListNode> heap = new PriorityQueue<>(lists.length,
+                Comparator.comparingInt((ListNode o) -> o.val));
         for (ListNode node : lists){
             if (node != null) {
                 heap.offer(node);
