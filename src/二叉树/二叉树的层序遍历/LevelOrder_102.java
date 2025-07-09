@@ -12,7 +12,7 @@ public class LevelOrder_102 {
         List<List<Integer>> ans = new ArrayList<>();
         if (root == null) return ans;
         Queue<TreeNode> queue = new ArrayDeque<>();
-        queue.add(root);
+        queue.offer(root);
         while (!queue.isEmpty()) {
             List<Integer> level = new ArrayList<>();
             int size = queue.size();
