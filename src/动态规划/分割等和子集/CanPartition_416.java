@@ -12,6 +12,8 @@ public class CanPartition_416 {
         dp[0] = true;
         for (int num : nums) {
             for (int i = target; i >= num; i--) {
+                // dp[i]: 不选当前数 num 时，是否能组成 i（保持之前的结果）
+                // dp[i - num]: 选当前数 num 时，是否能凑成 i - num（若为true，则选 num 后能凑出 i）
                 dp[i] = dp[i] || dp[i - num];
             }
         }
