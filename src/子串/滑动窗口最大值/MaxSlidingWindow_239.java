@@ -7,7 +7,7 @@ import java.util.Deque;
 public class MaxSlidingWindow_239 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
-        Deque<Integer> deque = new ArrayDeque<>();
+        ArrayDeque<Integer> deque = new ArrayDeque<>();
         for (int i = 0; i < k; ++i) {
             while (!deque.isEmpty() && nums[i] >= nums[deque.peekLast()]) {
                 deque.pollLast();
