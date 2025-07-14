@@ -9,8 +9,7 @@ class Subsets {
     }
 
     private fun backtrack(nums: IntArray, ans: MutableList<List<Int>>, path: MutableList<Int>, start: Int) {
-        val pathCopy = ArrayList(path)
-        ans.add(pathCopy)
+        ans.add(ArrayList(path))
         for (i in start until nums.size) {
             path.add(nums[i])
             backtrack(nums, ans, path, i + 1)
