@@ -17,7 +17,7 @@ public class Merge_56 {
             if (curStart > lastInterval[1]) {
                 ans.add(interval);
             } else {
-                lastInterval[1] = curEnd;
+                lastInterval[1] = Math.max(lastInterval[1], curEnd);
             }
         }
         return ans.toArray(new int[ans.size()][]);
