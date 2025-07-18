@@ -2,19 +2,16 @@ package 链表.环形链表;
 
 import common.ListNode;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class HasCycle_141 {
     public boolean hasCycle(ListNode head) {
-        Set<ListNode> visited = new HashSet<>();
-        ListNode pos = head;
-        while (pos != null) {
-            if (visited.contains(pos)) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
                 return true;
             }
-            visited.add(pos);
-            pos = pos.next;
         }
         return false;
     }
