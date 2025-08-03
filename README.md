@@ -144,3 +144,4 @@ LeetCode中 Hot100 的 Java 与 Kotlin 题解整理。
 - [Knapsack](src/未分类/Knapsack.kt)
 - [SelectionSort](src/未分类/SelectionSort.java)
 - [SortArray](src/未分类/SortArrayJava.java)
+- [MaxNumberLessThanK](src/未分类/MaxNumberLessThanK.java)
