@@ -20,10 +20,10 @@ public class buildTree_105 {
         if (preLeft > preRight) return null;
         // 前序的第一个是根
         int rootVal = preorder[preLeft];
-        TreeNode root = new TreeNode(rootVal);
         // 找到根在中序的位置
         int rootIndex = inOrderIndexMap.get(rootVal);
         int leftSize = rootIndex - inLeft;
+        TreeNode root = new TreeNode(rootVal);
         // 递归构建左子树
         root.left = build(preorder, preLeft + 1, preLeft + leftSize, inorder, inLeft, rootIndex - 1);
         // 递归构建右子树
