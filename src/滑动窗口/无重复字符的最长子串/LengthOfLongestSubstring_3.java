@@ -20,4 +20,24 @@ public class LengthOfLongestSubstring_3 {
         }
         return ans;
     }
+
+    public String longestSubstring(String s) {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        int left = 0;
+        int maxLen = 0, start = 0;
+        for (int right = 0; right < n; right++) {
+            char ch = s.charAt(right);
+            while (set.contains(ch)) {
+                set.remove(s.charAt(left++));
+            }
+            set.add(ch);
+            if (right - left + 1 > maxLen) {
+                maxLen = right - left + 1;
+                start = left;
+            }
+        }
+        return s.substring(start, start + maxLen);
+    }
+
 }
