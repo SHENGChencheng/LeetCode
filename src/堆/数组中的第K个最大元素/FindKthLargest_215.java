@@ -18,6 +18,9 @@ public class FindKthLargest_215 {
     }
 
     private int partition(int[] nums, int left, int right) {
+//         随机选择枢轴
+//        int randomIndex = left + (int)(Math.random() * (right - left + 1));
+//        swap(nums, randomIndex, right);
         int pivot = nums[right];
         int i = left;
         for (int j = left; j < right; j++) {
