@@ -26,12 +26,12 @@ public class CanFinish_207 {
         }
         int count = 0;
         while (!queue.isEmpty()) {
-            int course = queue.poll();
+            int pre = queue.poll();
             count++;
-            for (int next : graph.get(course)) {
-                inDegree[next]--;
-                if (inDegree[next] == 0) {
-                    queue.offer(next);
+            for (int course : graph.get(pre)) {
+                inDegree[course]--;
+                if (inDegree[course] == 0) {
+                    queue.offer(course);
                 }
             }
         }
