@@ -1,6 +1,5 @@
 package 二叉树.路径总和3
 
-import com.sun.source.tree.Tree
 import common.TreeNode
 
 class PathSum {
