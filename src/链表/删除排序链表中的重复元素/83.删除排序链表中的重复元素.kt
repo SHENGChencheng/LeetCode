@@ -2,7 +2,7 @@ package 链表.删除排序链表中的重复元素
 
 import common.ListNode
 
-class DeleteDuplicates_83 {
+class DeleteDuplicates {
     fun deleteDuplicates(head: ListNode?): ListNode? {
         if (head == null) return head
         var curr = head
