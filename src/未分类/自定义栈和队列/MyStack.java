@@ -1,4 +1,4 @@
-package 未分类;
+package 未分类.自定义栈和队列;
 
 public class MyStack<T> {
     private Object[] elements; // 用 Object 数组存储元素（泛型擦除后用 Object）

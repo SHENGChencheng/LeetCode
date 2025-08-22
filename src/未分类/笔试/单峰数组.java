@@ -1,4 +1,4 @@
-package 未分类;
+package 未分类.笔试;
 
 import java.util.Arrays;
 import java.util.Scanner;

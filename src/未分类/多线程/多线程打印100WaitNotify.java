@@ -1,6 +1,6 @@
-package 未分类;
+package 未分类.多线程;
 
-public class 多线程打印100 {
+public class 多线程打印100WaitNotify {
     public static class OrderedPrinting {
         private static int currentNum = 1;
         private static final Object lock = new Object();
