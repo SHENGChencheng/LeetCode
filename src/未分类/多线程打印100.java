@@ -1,7 +1,7 @@
 package 未分类;
 
 public class 多线程打印100 {
-    public class OrderedPrinting {
+    public static class OrderedPrinting {
         private static int currentNum = 1;
         private static final Object lock = new Object();
 
