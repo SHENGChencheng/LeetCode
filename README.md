@@ -145,7 +145,7 @@ LeetCode中 Hot100 的 Java 与 Kotlin 题解整理。
 - [287.寻找重复数](src/技巧/寻找重复数/287.寻找重复数.kt)
 
 ### 未分类
-- [415.字符串相加](src/未分类/415.字符串相加.kt)
+- [415.字符串相加](src/未分类/字符串相加/415.字符串相加.kt)
 - [912.排序数组](src/未分类/912.排序数组.kt)
 - [Knapsack](src/未分类/Knapsack.kt)
 - [SelectionSort](src/未分类/SelectionSort.java)

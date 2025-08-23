@@ -1,4 +1,4 @@
-package 未分类
+package 未分类.字符串相加
 
 class AddStrings {
     fun addStrings(num1: String, num2: String): String {
