@@ -2,7 +2,7 @@ package 二叉树.子结构判断
 
 import common.TreeNode
 
-class IsSubStructure_143 {
+class IsSubStructure {
     fun isSubStructure(A: TreeNode?, B: TreeNode?): Boolean {
         if (A == null || B == null) {
             return false
