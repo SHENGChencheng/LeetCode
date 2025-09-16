@@ -42,8 +42,8 @@ public class ExpiringLRUCache {
     }
 
     private Node getNode(int key) {
+        if (!map.containsKey(key)) return null;
         Node node = map.get(key);
-        if (node == null) return null;
         if (System.currentTimeMillis() > node.expireAt) {
             removeNode(node);
             map.remove(key);
