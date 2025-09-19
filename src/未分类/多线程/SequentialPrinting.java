@@ -16,12 +16,12 @@ public class SequentialPrinting {
 
     static class Printer implements Runnable {
         private final String content;
-        private final int targetState;
+        private final int currentState;
         private final int nextState;
 
-        public Printer(String content, int targetState, int nextState) {
+        public Printer(String content, int currentState, int nextState) {
             this.content = content;
-            this.targetState = targetState;
+            this.currentState = currentState;
             this.nextState = nextState;
         }
 
@@ -29,7 +29,7 @@ public class SequentialPrinting {
         public void run() {
             for (int i = 0; i < COUNT; i++) {
                 synchronized (lock) {
-                    while (state != targetState) {
+                    while (state != currentState) {
                         try {
                             lock.wait();
                         } catch (InterruptedException e) {

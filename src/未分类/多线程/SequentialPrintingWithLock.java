@@ -24,11 +24,11 @@ public class SequentialPrintingWithLock {
 //        threadC.start();
     }
 
-    private static void print(String content, int targetState, int nextState, Condition currentCondition, Condition nextCondition) {
+    private static void print(String content, int currentState, int nextState, Condition currentCondition, Condition nextCondition) {
         for (int i = 0; i < COUNT; i++) {
             lock.lock();
             try {
-                while (state != targetState) {
+                while (state != currentState) {
                     currentCondition.await();
                 }
                 System.out.println(content);
@@ -44,14 +44,14 @@ public class SequentialPrintingWithLock {
 
     private static class Print implements Runnable {
         private final String content;
-        private final int targetState;
+        private final int currentState;
         private final int nextState;
         private final Condition currentCondition;
         private final Condition nextCondition;
 
-        public Print(String content, int targetState, int nextState, Condition currentCondition, Condition nextCondition) {
+        public Print(String content, int currentState, int nextState, Condition currentCondition, Condition nextCondition) {
             this.content = content;
-            this.targetState = targetState;
+            this.currentState = currentState;
             this.nextState = nextState;
             this.currentCondition = currentCondition;
             this.nextCondition = nextCondition;
@@ -62,7 +62,7 @@ public class SequentialPrintingWithLock {
             for (int i = 0; i < COUNT; i++) {
                 lock.lock();
                 try {
-                    while (state != targetState) {
+                    while (state != currentState) {
                         currentCondition.await();
                     }
                     System.out.println(content);
